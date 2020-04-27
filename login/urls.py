@@ -1,8 +1,8 @@
 # dappx/urls.py
 from django.conf.urls import url
-from dappx import views
+from login import views
 # SET THE NAMESPACE!
-app_name = 'dappx'
+app_name = 'login'
 # Be careful setting the name to just /login use userlogin instead!
 urlpatterns=[
     url(r'^register/$',views.register,name='register'),
