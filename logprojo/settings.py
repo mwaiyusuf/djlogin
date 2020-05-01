@@ -54,7 +54,7 @@ ROOT_URLCONF = 'logprojo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR,],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +121,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
 
 MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL =  ‘/media/’
+# MEDIA_URL =  ‘/media/’
 
-LOGIN_URL = ‘/login/user_login/’
+# LOGIN_URL = ‘/login/user_login/’
 
