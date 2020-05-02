@@ -8,7 +8,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 def index(request):
-    return render(request,'login/index.html')
+    return render(request,'templates/index.html')
 @login_required
 def special(request):
     return HttpResponse("You are logged in !")
@@ -57,4 +57,4 @@ def user_login(request):
             print("They used username: {} and password: {}".format(username,password))
             return HttpResponse("Invalid login details given")
     else:
-        return render(request, 'dappx/login.html', {})
+        return render(request, 'templates/login.html', {})
